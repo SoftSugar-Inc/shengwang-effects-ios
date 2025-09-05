@@ -1,0 +1,28 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'APIExample-OC' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  pod 'AgoraRtcEngine_iOS', '4.5.2'
+  # pod 'sdk', :path => 'sdk.podspec'
+
+  
+end
+
+target 'Agora-ScreenShare-Extension-OC' do
+  use_frameworks!
+  # pod 'sdk', :path => 'sdk.podspec'
+  pod 'AgoraRtcEngine_iOS', '4.5.2'
+end
+
+target 'SimpleFilter' do
+  use_frameworks!
+  # pod 'sdk', :path => 'sdk.podspec'
+  pod 'AgoraRtcEngine_iOS', '4.5.2'
+end
+
+pre_install do |installer|
+  # system("sh .download_script.sh 4.3.2 true")
+end
